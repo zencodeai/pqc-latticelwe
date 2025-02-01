@@ -9,7 +9,7 @@ This project is a simple Python example that implements a toy version of an LWEâ
 In this example, we work modulo a small integer \( q \) (the modulus), use small dimensions, and choose the error from a tiny set (e.g. \(\{-1, 0, 1\}\)). The scheme works for encrypting a single bit. The idea is as follows:
 
 1. **Key Generation:**  
-   - Choose a secret vector \( \mathbf{s} \in \mathbb{Z}_q^n \) uniformly at random.
+   - Choose a secret vector $\( \mathbf{s} \in \mathbb{Z}_q^n \) uniformly at random.
    - Generate a random matrix \( \mathbf{A} \in \mathbb{Z}_q^{m \times n} \).
    - Sample a small error vector \( \mathbf{e} \in \mathbb{Z}_q^m \).
    - Compute \( \mathbf{b} = \mathbf{A}\mathbf{s} + \mathbf{e} \) (mod \( q \)).
